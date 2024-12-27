@@ -1,0 +1,32 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f5f5dc; /* Warna latar klasik */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #8b4513; /* Coklat tua */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+   
