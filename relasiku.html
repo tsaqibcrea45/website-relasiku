@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komunitas Nambah Relasi</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5dc; /* Warna latar klasik */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #8b4513; /* Coklat tua */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex; /* Menggunakan Flexbox untuk menu */
+            justify-content: center; /* Menyusun item menu di tengah */
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px; /* Jarak antar item menu */
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        h2 {
+            color: #8b4513; /* Warna judul */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #8b4513; /* Coklat tua */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Gaya untuk layar kecil (mobile) */
+        @media (max-width: 600px) {
+            header {
+                font-size: 1.5em;
+            }
+
+            nav ul {
+                flex-direction: column; /* Menyusun menu secara vertikal */
+            }
+
+            nav ul li {
+                margin: 10px 0; /* Jarak antar item menu */
+            }
+
+            section {
+                padding: 10px; /* Mengurangi padding untuk layar kecil */
+            }
+        }
+
+        /* Gambar responsif */
+        img {
+            max-width: 100%; /* Gambar tidak akan lebih lebar dari kontainer */
+            height: auto; /* Mempertahankan rasio aspek */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Komunitas Nambah Relasi</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#input-content">Input Konten</a></li>
+                <li><a href="#gallery">Galeri Konten</a></li>
+                <li><a href="#testimonials">Testimoni</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p>
+            Kami adalah komunitas yang mengajak setiap individu untuk menambah relasi dan saling tolong menolong dalam menghadapi berbagai masalah hidup. Di sini, Anda dapat berbagi pengalaman, mendapatkan motivasi, dan menemukan teman baru yang siap mendukung perjalanan hidup Anda. Bergabunglah dengan kami untuk menciptakan lingkungan yang positif dan saling menginspirasi.
+        </p>
+    </section>
+    
+    <section id="input-content">
+        <h2>Input Konten</h2>
+        <form>
+            <label for="title">Judul Konten:</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="description">Deskripsi Konten:</label>
+            <textarea id="description" name="description" required></textarea>
+            
+            <label for="image">Unggah Gambar:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+            
+            <label for="category">Kategori:</label>
+            <select id="category" name="category">
+                <option value="motivasi">Motivasi</option>
+                <option value="pengalaman">Pengalaman</option>
+                <option value="tips">Tips</option>
+            </select>
+            
+            <button type="submit">Kirim</button>
+        </form
